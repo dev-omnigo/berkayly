@@ -1,0 +1,209 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+	--text-color: #000;
+	--background-color: #fff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a,
+a:hover,
+a:visited {
+	text-decoration: none;
+	cursor: pointer;
+}
+img {
+	max-width: 100%;
+	margin: auto;
+}
+
+body {
+	background-color: var(--background-color);
+}
+/* commun */
+.safeArea {
+	padding: 0 50px;
+}
+
+/* commun */
+
+/* navbar header section */
+.navbar {
+	padding: 20px 0;
+	background-color: #fff;
+	-webkit-box-shadow: -2px -1px 8px 3px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: -3px -2px 30px 14px rgba(0, 0, 0, 0.425);
+	box-shadow: -4px -3px 5px 5px rgba(0, 0, 0, 0.35);
+}
+.desktopMenu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#desktopLogo {
+	display: inline-block;
+	width: 200px;
+}
+.logo {
+	width: 100%;
+}
+.nav-menu ul li {
+	list-style-type: none;
+	display: inline-block;
+	/* width: 120px; */
+}
+.nav-menu ul li a,
+.nav-menu ul li a:visited {
+	color: #000;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.nav-menu ul li:not(last-of-type) {
+	margin-right: 50px;
+}
+
+#header-cta {
+	color: #fff;
+	border: 1px solid red;
+	background-color: red;
+	padding: 12px 20px;
+	transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#header-cta:hover {
+	background-color: #fff;
+	color: red;
+}
+/* header */
+
+/* Hero section */
+.hero_wrapper {
+	height: 60vh;
+	display: flex;
+}
+.hero_wrapper > div {
+	width: 50%;
+	height: 100%;
+	display: inline-block;
+}
+#hero-left {
+	background-image: url("https://berkayly.com/wp-content/uploads/2022/04/60-scaled.jpg");
+	background-size: cover;
+	background-position: center bottom;
+	backdrop-filter: cover;
+}
+
+#hero-right {
+	background-image: url("https://berkayly.com/wp-content/uploads/2022/04/24-scaled.jpg");
+	background-size: cover;
+	background-position: center bottom;
+	backdrop-filter: cover;
+}
+.shine {
+	animation: shine 0.85s;
+}
+.shine::before {
+	background: linear-gradient(
+		to right,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(255, 255, 255, 0.7) 100%
+	);
+	content: "";
+	display: block;
+	height: 100%;
+	left: -75%;
+	position: absolute;
+	top: 0;
+	transform: skewX(-25deg);
+	width: 50%;
+	z-index: 2;
+	animation: shine 0.85s;
+}
+
+/* animations */
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+/* Hero section */
+.partnersSection .proTitle {
+	font-size: 70px;
+	letter-spacing: 3px;
+	color: red;
+	-webkit-text-fill-color: red; /* Will override color (regardless of order) */
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: black;
+}
+
+.partnersSection {
+	padding: 30px 0;
+}
+
+.partnersSection .safeArea {
+	display: flex;
+	flex-direction: row;
+}
+.partnersSection .safeArea .patners-title_wrapper {
+	width: 40%;
+}
+.partnersSection .safeArea .partners-carousel {
+	width: 60%;
+	display: flex;
+}
+
+.partnersSection .safeArea .partners-carousel div {
+	width: 50%;
+	text-align: center;
+}
+
+.partnersSection .safeArea .partners-carousel div img {
+	width: 300px;
+}
+
+/* partners */
+
+/* footer */
+footer .section-holder {
+	position: relative;
+}
+.footer-header-bg {
+	background: red;
+	height: 50px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	z-index: -1;
+}
+footer .footer-content {
+	position: relative;
+}
+footer .safe-Area {
+	padding: 0px 50px;
+}
+footer .safe-Area > ul {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	justify-content: space-between;
+}
+footer .safe-Area > ul > li > div:first-of-type{
+	height: 50px;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	margin-bottom: 20px;
+}
+footer .safe-Area > ul > li > * {
+	display: block;
+	list-style-type: none;
+}
