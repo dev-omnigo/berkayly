@@ -29,7 +29,9 @@ body {
 .safeArea {
 	padding: 0 50px;
 }
-
+.zIndex{
+	z-index: 10;
+}
 /* commun */
 
 /* navbar header section */
@@ -107,6 +109,24 @@ body {
 	background-size: cover;
 	background-position: center bottom;
 	backdrop-filter: cover;
+}
+
+.cta_wrapper{
+	height: 100%;
+	position: relative;
+}
+.cta_wrapper a{
+	position: absolute;
+	bottom: 0;
+	width: 200px;
+	padding: 15px 30px;
+	border: 1px solid red;
+	background-color: red;
+	color: #fff;
+	text-align: center;
+}
+.cta_wrapper a.inView{
+	bottom: 30%;
 }
 .shine {
 	animation: shine 0.85s;
@@ -206,4 +226,14 @@ footer .safe-Area > ul > li > div:first-of-type{
 footer .safe-Area > ul > li > * {
 	display: block;
 	list-style-type: none;
+}
+footer .mt{
+	margin-top: 40px;
+}
+footer .footer-footer{
+padding: 5px 50px;
+	background: lightgray;
+}
+footer .footer-footer span{
+	display: block;
 }
