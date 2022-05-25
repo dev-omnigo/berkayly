@@ -9,11 +9,14 @@ const main = () => {
 			left.classList.add("shine");
 			setTimeout(() => {
 				leftCta.classList.add("inView");
-			}, 1000);
+			}, 850);
 			left.removeEventListener("mouseover", handleft);
 		};
 		const handleright = (e) => {
 			right.classList.add("shine");
+				setTimeout(() => {
+					rightCta.classList.add("inView");
+				}, 850);
 			right.removeEventListener("mouseover", handleright);
 		};
 		if (left) left.addEventListener("mouseover", handleft);
