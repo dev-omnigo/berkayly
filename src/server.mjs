@@ -1,8 +1,15 @@
 import app from "./app.mjs";
-import http from "http";
+import https from "https";
+import { readFileSync } from "fs";
 
-const server = http.createServer({}, app);
-const PORT = process.env.PORT || "8080";
+const server = https.createServer(
+	{
+		key: readFileSync("key.pem"),
+		cert: readFileSync("cert.pem"),
+	},
+	app
+);
+const PORT = 443;
 
 server.listen(PORT, () => {
 	console.log(`server is listening on port ${PORT}`);

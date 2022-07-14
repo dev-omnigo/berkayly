@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,172 +7,227 @@
 		<title>Berkaly | Accueil</title>
 		<link rel="stylesheet" href="/css/style.css" />
 		<link rel="stylesheet" href="/css/style-responsive.css" />
+		<link
+			rel="stylesheet"
+			href="/plugins/bootstrap/css/bootstrap.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="/plugins/font-awesome/css/font-awesome.min.css"
+		/>
+		<script
+			src="/plugins/bootstrap/js/bootstrap.min.js"
+			type="text/javascript"
+		></script>
 	</head>
 	<body>
-		<header class="navbar">
-			<div class="safeArea">
-				<div class="sectionHolder">
-					<div class="desktopMenu">
-						<div class="logoHolder">
-							<a href="javascript:void(0)" id="desktopLogo">
-								<img
-									src="https://berkayly.com/wp-content/uploads/2019/04/Fichier-4-300x59.png"
-									alt="logo berkayly"
-									class="logo"
-								/>
-							</a>
-						</div>
-						<div class="nav-menu">
-							<ul>
-								<li>
-									<a href="/">Pelicules solaires</a>
-								</li>
-								<li>
-									<a href="/">Pelicules de securite</a>
-								</li>
-								<li>
-									<a href="/">Pelicules decoratives</a>
-								</li>
-								<li>
-									<a href="/">Realisations</a>
-								</li>
-							</ul>
-						</div>
-						<div class="header-cta">
-							<a href="javascript:void(0)" id="header-cta"
-								>Soumission</a
-							>
-						</div>
-					</div>
-					<div class="mobileMenu"></div>
-					<div class="mobileMenuSidebar"></div>
+		<header class="navbar" id="header">
+			<div class="container">
+				<div class="logoHolder d-inline ms-0 me-auto">
+					<a href="/" class="navbar-brand">
+						<img
+							src="/images/logos/logo.png"
+							alt="logo de berkayly"
+						/>
+					</a>
+				</div>
+				<div class="me-0 ms-auto nav-wrapper">
+					<ul class="cnavbar-nav">
+						<li class="nav-item">
+							<a href="">Pellicules solaires</a>
+						</li>
+						<li class="nav-item">
+							<a href="">Pellicules de sécurité</a>
+						</li>
+						<li class="nav-item">
+							<a href="">Pellicules Décoratives</a>
+						</li>
+						<li class="nav-item">
+							<a href="">Réalisations</a>
+						</li>
+						<li class="nav-item">
+							<div>
+								<a href="javascript:void(0)" class="header-cta"
+									>SOUMISSION</a
+								>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</header>
-		<main>
-			<section class="hero">
-				<div class="sectionHolder">
-					<div class="hero_wrapper">
-						<div class="hero-left" >
-							<div class="cta_wrapper" id="hero-left">
-								<a href="javascript:void(0)" class="hero-cta" id="leftCta">Residentiel</a>
-							</div>
+		<div class="pageWrapper">
+			<main>
+				<div>
+					<div class="side-hero left">
+						<div class="bg"></div>
+						<a href="/residentiel" class="side-hero-cta"
+							>Résidentiel</a
+						>
+					</div>
+					<div class="side-hero right">
+						<div class="bg"></div>
+						<a href="commercial" class="side-hero-cta"
+							>Commercial</a
+						>
+					</div>
+				</div>
+				<div>
+					<div class="container">
+						<div class="customer-title">
+							<h1>Ils nous font confiance</h1>
 						</div>
-						<div class="hero-right" >
-							<div class="cta_wrapper" id="hero-right">
-								<a href="javascript:void(0)" class="hero-cta" id="rightCta">Commercial</a>
+						<div class="customers-carousel h-100">
+							<div class="w-100 h-100">
+								<div
+									class="container carousel-wrapper w-100 h-100 d-flex align-items-center"
+								>
+									<div
+										class="c_carousel-item h-100 w-50 d-flex align-items-center"
+									>
+										<img
+											class="img-fluid"
+											src="/images/logos/logo_montreal.svg"
+											alt=""
+										/>
+									</div>
+									<div
+										class="c_carousel-item h-100 w-50 d-flex align-items-center"
+									>
+										<img
+											class="img-fluid"
+											src="/images/logos/logo_montreal.svg"
+											alt=""
+										/>
+									</div>
+								</div>
 							</div>
+							<span class="icon arrow left">
+								<i
+									class="fa fa-angle-left"
+									aria-hidden="true"
+								></i>
+							</span>
+							<span class="icon arrow right">
+								<i
+									class="fa fa-angle-right"
+									aria-hidden="true"
+								></i>
+							</span>
 						</div>
 					</div>
 				</div>
-			</section>
-			<section class="partnersSection zIndex">
-				<div class="sectionHolder">
-					<div class="safeArea">
-						<div class="patners-title_wrapper">
-							<h2 class="proTitle">
-								Ils nous ont fait confiance
-							</h2>
-						</div>
-						<div class="partners-carousel">
-							<a href="" class="prev"></a>
-							<div class="carouselItem">
-								<img
-									src="/images/logo_montreal.svg"
-									alt="logo de la ville de montreal"
-									class="partener-img"
-								/>
-							</div>
-							<div class="carouselItem">
-								<img
-									src="/images/logo_montreal.svg"
-									alt="logo de la ville de montreal"
-									class="partener-img"
-								/>
-							</div>
-							<a href="" class="next"></a>
-						</div>
-					</div>
-				</div>
-			</section>
-		</main>
-		<footer>
-			<div class="section-holder">
-				<div class="footer-content">
-					<div class="footer-header-bg"></div>
-					<div class="safe-Area">
-						<ul>
-							<li>
-								<div class="">Commercial</div>
-								<ul class="footer-row">
-									<li>Pellicules solaires</li>
-									<li>Pellicules decoratives</li>
-									<li>Pellicules de securites</li>
-									<li>Autres produits offerts</li>
-								</ul>
-							</li>
-							<li>
-								<div class="">Commercial</div>
-								<ul class="footer-row">
-									<li>Pellicules solaires</li>
-									<li>Pellicules decoratives</li>
-									<li>Pellicules de securites</li>
-									<li>Autres produits offerts</li>
-								</ul>
-							</li>
-							<li>
-								<div class="">Commercial</div>
-								<ul class="footer-row">
-									<li>Pellicules solaires</li>
-									<li>Pellicules decoratives</li>
-									<li>Pellicules de securites</li>
-									<li>Autres produits offerts</li>
-								</ul>
-							</li>
-							<li>
-								<div class="">Commercial</div>
-								<ul class="footer-row">
-									<li>Pellicules solaires</li>
-									<li>Pellicules decoratives</li>
-									<li>Pellicules de securites</li>
-									<li>Autres produits offerts</li>
-								</ul>
-							</li>
-							<li>
-								<div class="">Coordonnees</div>
-								<ul class="footer-row">
-									<li>Montreal</li>
-									<li>514-000-0000</li>
-									<li>
-										<a href="mailto:ventes@berkayly.com"
-											>ventes@berkayly.com</a
+			</main>
+			<footer class="page-footer">
+				<div class="section-header"></div>
+				<div class="footer-body">
+					<div class="container">
+						<div class="footer-navs">
+							<ul>
+								<li>Commercial</li>
+								<li>Pellicules solaire</li>
+								<li>Pellicules de sécurité</li>
+								<li>Pellicules décoraitves</li>
+								<li>Autres produits offerts</li>
+							</ul>
+							<ul>
+								<li>Residentiel</li>
+								<li>Pellicules solaire</li>
+								<li>Pellicules de sécurité</li>
+								<li>Pellicules décoraitves</li>
+								<li>Autres produits offerts</li>
+							</ul>
+							<ul>
+								<li>Partenaires</li>
+								<li>3M</li>
+								<li>WindowFilm Association</li>
+							</ul>
+							<ul>
+								<li>Certifications</li>
+								<li>3M</li>
+								<li>WindowFilm Association</li>
+							</ul>
+							<ul>
+								<li>Coordonnées</li>
+								<li>
+									<div class="">
+										<span>Montréal</span>
+										<span
+											><a href="tel:5140000000"
+												>514-000-0000</a
+											></span
 										>
-									</li>
-									<li>123 rue de la rue, Montreal Qc</li>
-								</ul>
-								<ul class="footer-row mt">
-									<li>Montreal</li>
-									<li>514-000-0000</li>
-									<li>
-										<a href="mailto:ventes@berkayly.com"
-											>ventes@berkayly.com</a
+										<span
+											><a
+												href="mailto:ventes@berkayly.com"
+												>ventes@berkayly.com</a
+											></span
 										>
-									</li>
-									<li>123 rue de la rue, Montreal Qc</li>
-								</ul>
-							</li>
-						</ul>
+										<span
+											>123 rue de la rue, Montréal,
+											Qc</span
+										>
+									</div>
+									<div class="">
+										<span
+											><a
+												href="mailto:ventes@berkayly.com"
+												>ventes@berkayly.com</a
+											></span
+										>
+										<span
+											>123 rue de la rue, Montréal,
+											Qc</span
+										>
+									</div>
+								</li>
+							</ul>
+							<div class="socials-wrapper">
+								<a href="#" class="facebook me-2">
+									<i
+										class="fa fa-facebook"
+										aria-hidden="true"
+									></i>
+								</a>
+								<a href="#" class="instagram me-2">
+									<i
+										class="fa fa-instagram"
+										aria-hidden="true"
+									></i>
+								</a>
+								<a href="#" class="linkedin">
+									<i
+										class="fa fa-linkedin"
+										aria-hidden="true"
+									></i>
+								</a>
+								<span class="socials-alt"
+									>Suivez nous sur nos autres
+									plateformes</span
+								>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="footer-footer">
-					<span
-						>&copy; Tous les droits sonty reserves 2022 -
-						Berkayly</span
-					>
-					<span>site web concu par Omnigo.ca</span>
+					<div class="container">
+						<span class="me-2"
+							>Tous droits réservés 2022 - Berkayly</span
+						>
+						<span
+							>Site web conçu par
+							<a href="https://www.omnigo.ca" target="_blank"
+								>Omnigo.ca</a
+							>
+						</span>
+					</div>
 				</div>
-			</div>
-		</footer>
+			</footer>
+		</div>
+		<script
+			src="/plugins/jquery/jquery.min.js"
+			type="text/javascript"
+		></script>
 		<script type="text/javascript" src="/js/function.js"></script>
 	</body>
 </html>
