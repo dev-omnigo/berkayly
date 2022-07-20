@@ -1,24 +1,17 @@
 import { Router } from "express";
-import { fileURLToPath } from "url";
-import path from "path";
 
 const routesHandler = new Router();
-const __filename = fileURLToPath(import.meta.url);
-const __direname = path.dirname(__filename);
 
 routesHandler.get("/", (req, res) => {
-	res.status(200).sendFile(
-		path.join(__direname, "../../public/html/index.html")
-	);
+	res.status(200).render("index");
+});
+routesHandler.get("/pellicules-solaires", (req, res) => {
+	res.status(200).render("pellicules-solaires");
 });
 routesHandler.get("/residentiel", (req, res) => {
-	res.status(200).sendFile(
-		path.join(__direname, "../../public/html/residential.html")
-	);
+	res.status(200).render("residential");
 });
 routesHandler.get("/commercial", (req, res) => {
-	res.status(200).sendFile(
-		path.join(__direname, "../../public/html/commercial.html")
-	);
+	res.status(200).render("commercial");
 });
 export default routesHandler;
