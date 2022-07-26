@@ -75,4 +75,14 @@ $(document).ready(function () {
 		slidesIndexes.unshift(slidesIndexes.pop());
 		$(slides).each((i, s) => $(s).attr("data-slide", slidesIndexes[i]));
 	});
+
+	// soumissions
+	$("#header-cta").click((e) => {
+		$("#soumission-wrapper").removeClass("zoomout");
+		$("#soumission-wrapper").addClass("show");
+	});
+	$("#soumission-wrapper #close-soumission ").click((e) => {
+		$("#soumission-wrapper").removeClass("show");
+		$("#soumission-wrapper").addClass("zoomout");
+	});
 });
